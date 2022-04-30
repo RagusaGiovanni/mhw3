@@ -1,0 +1,344 @@
+body{
+  margin: 0px;
+  font-size:16px;
+}
+
+
+
+ @media (max-width: 500px) {
+  #link {
+  display: none;
+  }
+  #menu
+  {
+  display: block;
+  }
+ }
+ 
+
+nav{
+    display:flex;
+    padding:15px;
+    justify-content: space-between;
+    font-size: 1em;
+    z-index: 1;
+  }
+  nav #link a {
+    margin: 15px;
+    padding:3px;
+    color:white;
+    cursor: pointer;
+    border:2px solid lightgray;
+  }
+  #link,.pulsante{
+    font-family:helvetica;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  nav #link a:hover
+  {
+    background-color: rgba(211, 243, 160, 0.75);
+  }
+  #logo strong{
+    font-size:4.5em;
+    color:white;
+    font-family: 'Great Vibes', helvetica;
+    font-weight: normal;;
+  }
+  #menu{
+    display: none;
+  }
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+   }
+
+  @media (max-width: 500px) {
+    .pulsante {
+      letter-spacing: 1px;
+      border-radius: 5px;
+      padding: 2px;
+
+    }
+  }
+  
+  
+  @media (max-width: 500px) {
+    #logo strong {
+      font-size: 1.8em;
+    }
+  }
+  
+ 
+  
+  header {
+    background-image: url(car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px;
+    position: relative;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  header::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3)
+  }
+
+  @media (max-width: 500px) {
+    header {
+      height: 250px;
+    }
+  }
+ 
+ 
+  header p{
+    color:white;
+    text-align:center;
+    line-height:1.5;
+    font-family: 'Special Elite', sans-serif;
+    z-index: 1;
+  }
+
+  
+  .pulsante{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    border-radius:15px;
+    border:2px solid white;
+    padding:5px;
+    color:white;
+    cursor:pointer;
+  }
+  header p strong{
+    font-size:2.5em;
+    font-family: 'Lobster', sans-serif;
+  }
+  @media (max-width: 500px) {
+    header p strong {
+      font-size: 1.8em;
+    }
+  }
+
+  header  a.pulsante:hover {
+    background-color: rgba(211, 243, 160, 0.75);
+  }
+
+  
+  #bottom-header div{
+    text-align: center;
+  }
+
+ 
+  #sezione1 h1 {
+    text-align: center;
+    padding:10px;
+    font-size: 1.8em;
+    border:3px solid rgb(49, 49, 48);
+    background-color:beige;
+    color: rgba(238, 15, 15, 0.9);
+
+    font-family: 'Special Elite', sans-serif;
+    letter-spacing: 5px;
+    margin: 0px;
+    margin-bottom: 9px;
+    
+  }
+  @media (max-width: 500px) {
+    #sezione1 h1 {
+      font-size: 0.9em;
+    }
+  }
+
+  #sezione1 span{
+    background-color:khaki;
+    color:red;
+    text-decoration: underline;
+    font-size: 1em;
+  }
+  @media (max-width: 500px) {
+    #sezione1 span{
+      font-size: 0.8em;
+    }
+  }
+  #sezione1 em{
+    font-size: 0.98em;
+  }
+  @media (max-width: 500px) {
+    #sezione1 em{
+      font-size: 0.85em;
+    }
+  }
+
+  #img img,#pagare img{
+    width:100%;
+    height:100%;
+  }
+
+  #sezione1{
+    margin-bottom: 70px;
+    font-size:18px;
+  }
+  @media (max-width: 500px) {
+    #sezione1{
+      margin-bottom: 24px;
+      font-size: 0.90em;
+    }
+  }
+
+  #img{
+    height:220px;
+    width:290px;
+    margin:5px;
+    border:1px solid lightgrey;
+  }
+  #piano1{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom: 120px;
+    font-size: 17px;
+  }
+  @media (max-width: 500px) {
+    #piano1{
+      margin-bottom: 50px;
+    }
+  }
+  
+  #piano1 div h1{
+    font-size:1em;
+    margin:5px;
+    text-transform:uppercase;
+    text-decoration:underline;
+    font-family: 'Frank Ruhl Libre',sans-serif;
+  }
+
+  @media (max-width: 500px) {
+    #piano1 {
+      flex-direction: column;
+    }
+  }
+
+  em p{
+    margin:5px;
+  }
+
+  p span{
+    background-color:khaki;
+    color:red;
+  }
+  #piano1 div a:hover,#other p a:hover{
+    color:red;
+    cursor:pointer;
+  }
+  #other{
+    text-align: center;
+  }
+  #other p{
+    border-radius:15px;
+    border:1px solid black;
+    padding:5px;
+    color:black;
+    
+  }
+  footer{
+    height: 300px;
+    background-color: black;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    font-size: 18px;
+    color:white;
+  }
+
+  footer section{
+    height:70%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  #footer p{
+    font-size:0.5em;
+  }
+  footer h1{
+    color:white;
+    text-transform:uppercase;
+    font-family: 'Frank Ruhl Libre',sans-serif;
+    font-size: 1em;
+    color:yellow;
+    margin-bottom: 0px;
+  }
+  #foot-choice a{
+    text-decoration: underline;
+    font-size: 0.9em;
+    font-family: 'Abel', sans-serif;
+  }
+  #foot-choice a:hover{
+    color:yellow;
+    cursor:pointer;
+  }
+  #pagare{
+    height:80px;
+    width:400px;
+    border:2px solid white
+  }
+  @media (max-width: 500px) {
+    #payout{
+      display:none;
+    }
+  }
+  #creator p{
+    font-family: 'Satisfy', helvetica;
+  }
+  .API div input{
+    cursor: pointer;
+  }
+
+
+.API div h1{
+  font-size: 1.7em;
+}
+
+.API .result{
+    border: none;
+}
+
+.API p{
+    padding: 10px;
+}
+
+.titolo_ris, .contento_ris{
+  border: solid 2px black;
+  background-color: beige;
+  color: red;
+  text-align: center;
+  padding: 10px;
+  width:100%;
+}
+
+.API div{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  border: solid 2px black;
+  background-color:aquamarine;
+}
+.Spotify p{
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-family: 'Abel', sans-serif;
+}
+  
